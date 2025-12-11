@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức & Sự kiện - AiRRVie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'K2D', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- HEADER -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-3xl font-bold text-green-600">AiRRVie</a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600 transition">Trang Chủ</a>
+                    <a href="challenge.html" class="text-gray-600 hover:text-green-600 transition">Thách thức</a>
+                    <a href="solution.html" class="text-gray-600 hover:text-green-600 transition">Giải pháp</a>
+                    <a href="technology.html" class="text-gray-600 hover:text-green-600 transition">Công nghệ</a>
+                    <a href="news.html" class="text-green-600 font-semibold border-b-2 border-green-600">Tin tức & Sự kiện</a>
+                    <a href="team.html" class="text-gray-600 hover:text-green-600 transition">Đội ngũ</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-green-50">Trang Chủ</a>
+            <a href="challenge.html" class="block py-2 px-4 text-sm hover:bg-green-50">Thách thức</a>
+            <a href="solution.html" class="block py-2 px-4 text-sm hover:bg-green-50">Giải pháp</a>
+            <a href="technology.html" class="block py-2 px-4 text-sm hover:bg-green-50">Công nghệ</a>
+            <a href="news.html" class="block py-2 px-4 text-sm bg-green-50 text-green-700 font-semibold">Tin tức & Sự kiện</a>
+            <a href="team.html" class="block py-2 px-4 text-sm hover:bg-green-50">Đội ngũ</a>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Tin tức & Sự kiện</h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Cập nhật những thông tin, hoạt động và các cột mốc quan trọng của dự án AiRRVie.</p>
+            </div>
+
+            <!-- Danh sách bài viết -->
+            <div class="max-w-5xl mx-auto space-y-16">
+
+                <!-- Sự kiện 1 -->
+                <a href="./documents/Báo cáo Workshop_ 120525.pdf" download class="block transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <!-- Cột ảnh -->
+                        <div class="md:w-2/5">
+                            <img src="/img/workshop_120525.jpg" alt="Workshop" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Cột nội dung -->
+                        <div class="md:w-3/5 p-8">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full">Sự kiện</span>
+                                <time class="text-base text-slate-500">Ngày 12 tháng 05, 2025</time>
+                            </div>
+                            <h2 class="text-2xl font-bold mb-3 text-slate-900">
+                                Cuộc họp tham vấn "Ứng dụng AI cho canh tác lúa thích ứng với biến đổi khí hậu ở Việt Nam"
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                                Tìm hiểu tác động của thời tiết đến sản xuất lúa thông qua cách tiếp cận lồng ghép giới và các bên liên quan, nhằm xác định thuận lợi và thách thức cho nông dân, từ đó xây dựng công cụ trợ lý AI phù hợp với nhu cầu của nông dân. Cuộc họp xác định rõ nhu cầu cấp thiết của nông dân về AI là dự báo giá cả, khí tượng thủy văn, và hỗ trợ kỹ thuật phòng trừ sâu bệnh.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            
+                <!-- Bài viết 2 (Thành tựu - video)
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    Cột video
+                    <div class="md:w-2/5">
+                        <iframe class="w-full h-full aspect-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    Cột nội dung
+                    <div class="md:w-3/5 p-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <span class="bg-purple-100 text-purple-800 text-sm font-semibold px-4 py-1 rounded-full">Thành tựu</span>
+                            <time class="text-base text-slate-500">Ngày 05 tháng 12, 2025</time>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-3 text-slate-900">
+                            Video tổng kết Giai đoạn 1 của dự án AiRRVie
+                        </h2>
+                        <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                            Cùng nhìn lại những dấu ấn đáng nhớ trong giai đoạn đầu của dự án, từ những buổi gặp gỡ đầu tiên cho đến các thử nghiệm thực địa quan trọng tại Đồng bằng Sông Cửu Long. Video này tóm tắt các hoạt động chính và phỏng vấn nhanh các thành viên chủ chốt của dự án.
+                        </p>
+                    </div>
+                </article> -->
+
+                <!-- Tin tức Dự án -->
+                <a href="./documents/BÁO CÁO THỰC ĐỊA AIRRVie_181125.pdf" download class="block transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <!-- Cột ảnh -->
+                        <div class="md:w-2/5">
+                            <img src="img/thucdia_181125.png" alt="Thực địa" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Cột nội dung -->
+                        <div class="md:w-3/5 p-8">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-1 rounded-full">Tin tức</span>
+                                <time class="text-base text-slate-500">Ngày 18 và 20 tháng 11, 2025</time>
+                            </div>
+                            <h2 class="text-2xl font-bold mb-3 text-slate-900">
+                                Khảo sát thu thập dữ liệu thực địa tại Đồng bằng Sông Cửu Long
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                                Kết quả thực địa tại Hợp tác xã Cọ Khía (An Giang) ghi nhận các thách thức về giá lúa giảm, chi phí đầu vào tăng, hạ tầng sản xuất hạn chế, và gánh nặng lao động đặt lên phụ nữ. Tại xã Nhu Gia (Cần Thơ), nơi thí điểm mô hình lúa hữu cơ, ghi nhận khó khăn về chi phí vật tư cao, thiếu liên kết thương mại, và quản lý dịch bệnh chưa triệt để.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Sự kiện 2 -->
+                <a href="./documents/BÁO CÁO CUỘC HỌP THAM VẤN TẠI ĐẠI HỌC CẦN THƠ_211125.pdf" download class="block transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <!-- Cột ảnh -->
+                        <div class="md:w-2/5">
+                            <img src="/img/hoithao_211125.jpg" alt="Hội thảo" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Cột nội dung -->
+                        <div class="md:w-3/5 p-8">
+                            <div class="flex items-center gap-4 mb-3">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full">Sự kiện</span>
+                                <time class="text-base text-slate-500">Ngày 21 tháng 11, 2025</time>
+                            </div>
+                            <h2 class="text-2xl font-bold mb-3 text-slate-900">
+                                Hội thảo các bên liên quan cho Dự án AIRRVie
+                            </h2>
+                            <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                                Giới thiệu phiên bản Proof-of-Concept (PoC) của Trợ lý AI và thu thập phản hồi mang tính xây dựng về kỹ thuật và chính sách, nhằm hỗ trợ nông dân chuyển đổi sang canh tác bền vững. Các đại biểu thực hành thử nghiệm Trợ lý AI, đồng thời thảo luận nhóm để đánh giá tính phù hợp của các tính năng AI và đề xuất các yêu cầu kỹ thuật/vận hành.
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="max-w-7xl mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Cột 1: Thông tin dự án -->
+                <div class="space-y-4">
+                    <a href="index.html" class="text-3xl font-bold text-white">AiRRVie</a>
+                    <p class="text-slate-400">Một dự án hợp tác nghiên cứu nhằm trao quyền cho nông dân Việt Nam thông qua Trí tuệ Nhân tạo, hướng tới nền nông nghiệp bền vững và thích ứng với biến đổi khí hậu.</p>
+                </div>
+
+                <!-- Cột 2: Liên kết nhanh -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">LIÊN KẾT NHANH</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="solution.html" class="text-slate-400 hover:text-white transition">Giải pháp</a></li>
+                        <li><a href="technology.html" class="text-slate-400 hover:text-white transition">Công nghệ</a></li>
+                        <li><a href="team.html" class="text-slate-400 hover:text-white transition">Đội ngũ</a></li>
+                        <li><a href="news.html" class="text-slate-400 hover:text-white transition">Tin tức & Sự kiện</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Thông tin liên hệ -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">THÔNG TIN LIÊN HỆ</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">quan.le@ucd.ie</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">vpdtri@ctu.edu.vn</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <span class="text-slate-400">(+84) 123 456 789</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+                <p>&copy; 2025 AiRRVie Project. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

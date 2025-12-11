@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thách thức - AiRRVie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'K2D', sans-serif; } </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- HEADER -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-3xl font-bold text-green-600">AiRRVie</a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600 transition">Trang Chủ</a>
+                    <a href="challenge.html" class="text-green-600 font-semibold border-b-2 border-green-600">Thách thức</a>
+                    <a href="solution.html" class="text-gray-600 hover:text-green-600 transition">Giải pháp</a>
+                    <a href="technology.html" class="text-gray-600 hover:text-green-600 transition">Công nghệ</a>
+                    <a href="news.html" class="text-gray-600 hover:text-green-600 transition">Tin tức & Sự kiện</a>
+                    <a href="team.html" class="text-gray-600 hover:text-green-600 transition">Đội ngũ</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-green-50">Trang Chủ</a>
+            <a href="challenge.html" class="block py-2 px-4 text-sm bg-green-50 text-green-700 font-semibold">Thách thức</a>
+            <a href="solution.html" class="block py-2 px-4 text-sm hover:bg-green-50">Giải pháp</a>
+            <a href="technology.html" class="block py-2 px-4 text-sm hover:bg-green-50">Công nghệ</a>
+            <a href="news.html" class="block py-2 px-4 text-sm hover:bg-green-50">Tin tức & Sự kiện</a>
+            <a href="team.html" class="block py-2 px-4 text-sm hover:bg-green-50">Đội ngũ</a>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">Những Thách Thức Cốt Lõi</h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Nền nông nghiệp lúa gạo Việt Nam, dù là trụ cột kinh tế, đang phải đối mặt với những vấn đề cấp bách cần được giải quyết.</p>
+            </div>
+        
+            <!-- Bố cục mới: Xen kẽ ảnh và nội dung cho từng thách thức -->
+            <div class="space-y-20">
+
+                <!-- Thách thức 1: Biến đổi khí hậu -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Cột ảnh -->
+                    <div>
+                        <img src="./img/challenge_hanhan.jpg" alt="Hạn hán" class="rounded-lg shadow-xl w-full object-cover">
+                    </div>
+                    <!-- Cột nội dung -->
+                    <div class="md:pl-8">
+                        <h3 class="text-3xl font-bold mb-4 text-red-600">Áp lực từ Biến đổi Khí hậu</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed text-justify">Với hơn 3,260 km đường bờ biển và các đồng bằng thấp, Việt Nam cực kỳ dễ bị tổn thương. Hạn hán, xâm nhập mặn và lũ lụt tại Đồng bằng Sông Cửu Long đã gây ra thiệt hại ước tính <strong>674 triệu USD</strong> giai đoạn 2014-2016, đe dọa trực tiếp sinh kế của hơn 70% dân số khu vực.</p>
+                    </div>
+                </div>
+
+                <!-- Thách thức 2: Canh tác truyền thống -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Cột nội dung (hiển thị trước trên màn hình lớn) -->
+                    <div class="md:pr-8 md:order-first order-last">
+                        <h3 class="text-3xl font-bold mb-4 text-yellow-600">Giới hạn của Canh tác Truyền thống</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed text-justify">Phương pháp canh tác hiện tại bộc lộ nhiều hạn chế. Hơn <strong>90% trong số 8 triệu hộ nông dân</strong> vẫn phụ thuộc vào việc sử dụng quá mức phân bón và thuốc trừ sâu. Điều này không chỉ làm tăng chi phí mà còn gây hại cho môi trường, làm suy thoái sức khỏe đất và ảnh hưởng chất lượng nông sản.</p>
+                    </div>
+                    <!-- Cột ảnh -->
+                    <div>
+                        <img src="./img/challenge_phunthuoc.jpg" alt="Nông dân phun thuốc" class="rounded-lg shadow-xl w-full object-cover">
+                    </div>
+                </div>
+            
+                <!-- Thách thức 3: Khoảng trống công nghệ -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Cột ảnh -->
+                    <div>
+                        <img src="./img/challenge_congnghe.jpg" alt="Ứng dụng nông nghiệp" class="rounded-lg shadow-xl w-full object-cover">
+                    </div>
+                    <!-- Cột nội dung -->
+                    <div class="md:pl-8">
+                        <h3 class="text-3xl font-bold mb-4 text-blue-600">Khoảng trống Công nghệ</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed text-justify">Mặc dù có nhiều công cụ kỹ thuật số, chúng chưa thực sự tiếp cận được người nông dân Việt Nam, với chỉ <strong>3%</strong> sử dụng. Các công cụ này thường chung chung, thiếu tính cá nhân hóa. Đây chính là khoảng trống mà AiRRVie được tạo ra để lấp đầy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+   <!-- FOOTER -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="max-w-7xl mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Cột 1: Thông tin dự án -->
+                <div class="space-y-4">
+                    <a href="index.html" class="text-3xl font-bold text-white">AiRRVie</a>
+                    <p class="text-slate-400">Một dự án hợp tác nghiên cứu nhằm trao quyền cho nông dân Việt Nam thông qua Trí tuệ Nhân tạo, hướng tới nền nông nghiệp bền vững và thích ứng với biến đổi khí hậu.</p>
+                </div>
+
+                <!-- Cột 2: Liên kết nhanh -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">LIÊN KẾT NHANH</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="solution.html" class="text-slate-400 hover:text-white transition">Giải pháp</a></li>
+                        <li><a href="technology.html" class="text-slate-400 hover:text-white transition">Công nghệ</a></li>
+                        <li><a href="team.html" class="text-slate-400 hover:text-white transition">Đội ngũ</a></li>
+                        <li><a href="news.html" class="text-slate-400 hover:text-white transition">Tin tức & Sự kiện</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Thông tin liên hệ -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">THÔNG TIN LIÊN HỆ</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">quan.le@ucd.ie</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">vpdtri@ctu.edu.vn</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <span class="text-slate-400">(+84) 123 456 789</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+                <p>&copy; 2025 AiRRVie Project. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
