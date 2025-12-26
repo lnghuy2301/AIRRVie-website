@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - AIRRVie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'K2D', sans-serif; }
+        .text-gradient { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .link-active::after {
+            content: '';
+            display: block;
+            width: 68%;
+            height: 2px;
+            background-color: #16a34a;
+            margin: 2px auto 0; 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- HEADER -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+            
+                <a href="index.html" class="text-3xl font-bold text-green-600">AIRRVie</a>
+
+                <!-- Cụm Menu Desktop -->
+                <div class="hidden md:flex items-center gap-x-8">
+                    <nav class="flex items-center space-x-1 text-base">
+                        <a href="index.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Home</a>
+                        <a href="challenge.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Challenge</a>
+                        <a href="solution.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Solution</a>
+                        <a href="technology.html" class="w-32 text-center py-2 text-green-600 font-semibold link-active">Technology</a>
+                        <a href="news.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">News & Event</a>
+                        <a href="team.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Team</a>
+                    </nav>
+
+                    <div class="relative" id="lang-switcher">
+                        <button id="lang-button" class="flex items-center gap-2 px-4 py-2 border border-slate-300 bg-white rounded-lg text-slate-700 hover:bg-slate-50 transition">
+                            <span>EN</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                       
+                        <div id="lang-menu" class="hidden absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-lg z-20 border border-slate-200 overflow-hidden">
+                            <a href="../technology.html" class="block px-4 py-2 text-slate-700 hover:bg-slate-100 text-center">Tiếng Việt</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cụm Nút Mobile -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md text-slate-800 hover:bg-slate-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-md z-40">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Home</a>
+                <a href="challenge.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Challenge</a>
+                <a href="solution.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Solution</a>
+                <a href="technology.html" class="block py-2 px-3 rounded-md text-sm font-medium bg-green-50 text-green-700">Technology</a>
+                <a href="news.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">News & Event</a>
+                <a href="team.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Team</a>
+                
+                <!-- Nút chuyển ngôn ngữ cho mobile -->
+                <div class="border-t pt-4 mt-4">
+                    <a href="../technology.html" class="flex items-center justify-center w-full py-2 px-3 rounded-md text-base font-medium text-slate-600 border border-slate-300 hover:bg-slate-50">
+                        <span>Chuyển sang tiếng Việt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">AIRRVie's Technology Architecture</h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">AIRRVie's strength comes from the intelligent integration of data layers, AI models, and user interface, creating a comprehensive agricultural support system.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700">Layer 1: Multi-Source Data Platform (Data Layer)</h3>
+                        <ul class="text-slate-600 text-justify list-none space-y-2">
+                            <li class="pl-4"><strong>Remote Sensing Data:</strong> Satellite imagery from Sentinel-1/2, NICFI, and MODIS provides a comprehensive environmental overview.</li>
+                            <li class="pl-4"><strong>Ground-Truth Data:</strong> Historical data on salinity, hydrology, and soil quality from research partners.</li>
+                            <li class="pl-4"><strong>User-Generated Data:</strong> Real-time information and images from the fields, provided by the farmers themselves.</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700">Layer 2: AI Processing Core (AI Core)</h3>
+                        <ul class="text-slate-600 text-justify list-none space-y-2">
+                            <li class="pl-4"><strong>Environmental Analysis Models:</strong> Foundation Models trained to automatically map key indicators like salinity, drought, and soil quality on a large scale.</li>
+                            <li class="pl-4"><strong>Field-Specific Analysis Models:</strong> Specialized models that analyze farmer-provided images and data to diagnose crop health and forecast yield for individual fields.</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700">Layer 3: Interactive AI Assistant (Assistant Layer)</h3>
+                        <p class="text-slate-600 text-justify pl-4">
+                            This is the user-facing layer, powered by an advanced Large Language Model (LLM) built upon the NuocGPT platform. The assistant synthesizes analysis from the AI Core and enriches it with scientific knowledge via RAG (Retrieval-Augmented Generation) to deliver the most accurate, reliable, and understandable farming recommendations.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center h-full">
+                     <img src="../img/technology.png" alt="AI Technology" class="rounded-lg shadow-xl w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="max-w-7xl mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Column 1: Project Information -->
+                <div class="space-y-4">
+                    <a href="index.html" class="text-3xl font-bold text-white">AIRRVie</a>
+                    <p class="text-slate-400">A collaborative research project aimed at empowering Vietnamese farmers through Artificial Intelligence, fostering sustainable agriculture and climate change adaptation.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">QUICK LINKS</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="solution.html" class="text-slate-400 hover:text-white transition">Solution</a></li>
+                        <li><a href="technology.html" class="text-slate-400 hover:text-white transition">Technology</a></li>
+                        <li><a href="team.html" class="text-slate-400 hover:text-white transition">Team</a></li>
+                        <li><a href="news.html" class="text-slate-400 hover:text-white transition">News & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Information -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">CONTACT INFORMATION</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">quan.le@ucd.ie</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <span class="text-slate-400">vpdtri@ctu.edu.vn</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <span class="text-slate-400">(+84) 123 456 789</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+                <p>&copy; 2025 AIRRVie Project. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

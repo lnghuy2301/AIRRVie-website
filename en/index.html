@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - AIRRVie</title>
+    <title>Home - AIRRVie</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +14,14 @@
         .link-active::after {
             content: '';
             display: block;
-            width: 60%;
+            width: 35%;
             height: 2px;
             background-color: #16a34a;
             margin: 2px auto 0; 
         }
     </style>
-
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
     <!-- HEADER -->
@@ -35,22 +34,22 @@
                 <!-- Cụm Menu Desktop -->
                 <div class="hidden md:flex items-center gap-x-8">
                     <nav class="flex items-center space-x-1 text-base">
-                        <a href="index.html" class="w-32 text-center py-2 text-green-600 font-semibold link-active">Trang Chủ</a>
-                        <a href="challenge.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Thách thức</a>
-                        <a href="solution.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Giải pháp</a>
-                        <a href="technology.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Công nghệ</a>
-                        <a href="news.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Tin tức & Sự kiện</a>
-                        <a href="team.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Đội ngũ</a>
+                        <a href="index.html" class="w-32 text-center py-2 text-green-600 font-semibold link-active">Home</a>
+                        <a href="challenge.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Challenge</a>
+                        <a href="solution.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Solution</a>
+                        <a href="technology.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Technology</a>
+                        <a href="news.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">News & Event</a>
+                        <a href="team.html" class="w-32 text-center py-2 text-gray-600 hover:text-green-600 transition">Team</a>
                     </nav>
 
                     <div class="relative" id="lang-switcher">
                         <button id="lang-button" class="flex items-center gap-2 px-4 py-2 border border-slate-300 bg-white rounded-lg text-slate-700 hover:bg-slate-50 transition">
-                            <span>VI</span>
+                            <span>EN</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                        
                         <div id="lang-menu" class="hidden absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-lg z-20 border border-slate-200 overflow-hidden">
-                            <a href="./en/index.html" class="block px-4 py-2 text-slate-700 hover:bg-slate-100 text-center">English</a>
+                            <a href="../index.html" class="block px-4 py-2 text-slate-700 hover:bg-slate-100 text-center">Tiếng Việt</a>
                         </div>
                     </div>
                 </div>
@@ -67,17 +66,17 @@
         <!-- Menu Mobile Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-md z-40">
             <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="index.html" class="block py-2 px-3 rounded-md text-sm font-medium bg-green-50 text-green-700">Trang Chủ</a>
-                <a href="challenge.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Thách thức</a>
-                <a href="solution.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Giải pháp</a>
-                <a href="technology.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Công nghệ</a>
-                <a href="news.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Tin tức & Sự kiện</a>
-                <a href="team.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Đội ngũ</a>
+                <a href="index.html" class="block py-2 px-3 rounded-md text-sm font-medium bg-green-50 text-green-700">Home</a>
+                <a href="challenge.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Challenge</a>
+                <a href="solution.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Solution</a>
+                <a href="technology.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Technology</a>
+                <a href="news.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">News & Event</a>
+                <a href="team.html" class="block py-2 px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-800">Team</a>
                 
                 <!-- Nút chuyển ngôn ngữ cho mobile -->
                 <div class="border-t pt-4 mt-4">
-                    <a href="./en/index.html" class="flex items-center justify-center w-full py-2 px-3 rounded-md text-base font-medium text-slate-600 border border-slate-300 hover:bg-slate-50">
-                        <span>Switch to English</span>
+                    <a href="../index.html" class="flex items-center justify-center w-full py-2 px-3 rounded-md text-base font-medium text-slate-600 border border-slate-300 hover:bg-slate-50">
+                        <span>Chuyển sang tiếng Việt</span>
                     </a>
                 </div>
             </div>
@@ -88,19 +87,19 @@
     <main>
         <!-- HERO SECTION -->
         <section class="relative min-h-screen flex items-center justify-center">
-             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./img/precision-ag-corn-conceptual-shutterstock.jpg')">
+             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../img/precision-ag-corn-conceptual-shutterstock.jpg')">
                 <div class="absolute inset-0 bg-black/60"></div>
             </div>
             <div class="relative text-center text-white px-4 z-10">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-                    Nông dân trồng lúa thích ứng với Biến đổi khí hậu nhờ<br>
-                    <span class="bg-gradient-to-r from-green-400 to-emerald-500 text-gradient">Trợ lý AI cá nhân hóa</span>
+                    Rice Farmers Adapting to Climate Change with a<br>
+                    <span class="bg-gradient-to-r from-green-400 to-emerald-500 text-gradient">Personalized AI Assistant</span>
                 </h1>
                 <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
-                    AIRRVie trao quyền cho nông dân thông qua trợ lý ảo thông minh, giúp tăng năng suất, thích ứng biến đổi khí hậu và bảo vệ môi trường.
+                    AIRRVie empowers farmers through an intelligent virtual assistant, helping to increase productivity, adapt to climate change, and protect the environment.
                 </p>
                 <a href="solution.html" class="mt-10 inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-green-700 transition-transform hover:scale-105">
-                    Tìm hiểu Giải pháp
+                    Discover the Solution
                 </a>
             </div>
         </section>
@@ -108,72 +107,59 @@
         <!-- INTRO SECTIONS -->
         <section class="py-24">
              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12 text-center">
-                
-                <!-- GIẢI PHÁP 1: Căn chỉnh nút "Xem chi tiết" -->
-                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
-                    <!-- Bọc nội dung phía trên bằng một div và thêm class 'flex-grow' -->
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-4">Thách thức</h3>
-                        <p class="text-slate-600 mb-6">Đối mặt với thách thức từ <b>biến đổi khí hậu</b> và hạn chế của <b>phương pháp canh tác truyền thống</b>, người nông dân Việt Nam cần một công cụ đột phá để bảo vệ sinh kế và canh tác bền vững.</p>
-                    </div>
-                    <a href="challenge.html" class="font-semibold text-green-600 hover:text-green-700">Xem chi tiết &rarr;</a>
-                </div>
-                
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-4">Giải pháp</h3>
-                        <p class="text-slate-600 mb-6">AIRRVie là trợ lý nông nghiệp AI, cung cấp các khuyến nghị được <b>cá nhân hóa</b> cho từng thửa ruộng. Bằng cách phân tích dữ liệu thực tế, hệ thống giúp nông dân tối ưu hóa canh tác để tăng năng suất và giảm thiểu rủi ro.</p>
+                        <h3 class="text-2xl font-bold mb-4">The Challenge</h3>
+                        <p class="text-slate-600 mb-6">Facing challenges from <b>climate change</b> and the limitations of <b>traditional farming methods</b>, Vietnamese farmers need a groundbreaking tool to protect their livelihoods and practice sustainable agriculture.</p>
                     </div>
-                    <a href="solution.html" class="font-semibold text-green-600 hover:text-green-700">Xem chi tiết &rarr;</a>
+                    <a href="challenge.html" class="font-semibold text-green-600 hover:text-green-700">Learn more &rarr;</a>
                 </div>
-                
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="flex-grow">
-                        <h3 class="text-2xl font-bold mb-4">Công nghệ</h3>
-                        <p class="text-slate-600 mb-6">Nền tảng của AIRRVie là sự kết hợp giữa <b>dữ liệu viễn thám</b> và các <b>mô hình AI tạo sinh (LLM)</b> tiên tiến. Công nghệ này chuyển hóa các thông số phức tạp thành hướng dẫn canh tác rõ ràng và chính xác.</p>
+                        <h3 class="text-2xl font-bold mb-4">The Solution</h3>
+                        <p class="text-slate-600 mb-6">AIRRVie is an AI-powered agricultural assistant that provides <b>personalized</b> recommendations for each field. By analyzing real-world data, the system helps farmers optimize cultivation to increase yields and mitigate risks.</p>
                     </div>
-                    <a href="technology.html" class="font-semibold text-green-600 hover:text-green-700">Xem chi tiết &rarr;</a>
+                    <a href="solution.html" class="font-semibold text-green-600 hover:text-green-700">Learn more &rarr;</a>
                 </div>
-
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-4">The Technology</h3>
+                        <p class="text-slate-600 mb-6">AIRRVie's platform combines <b>remote sensing data</b> with advanced <b>Generative AI (LLM) models</b>. This technology transforms complex parameters into clear and accurate farming guidance.</p>
+                    </div>
+                    <a href="technology.html" class="font-semibold text-green-600 hover:text-green-700">Learn more &rarr;</a>
+                </div>
             </div>
         </section>
 
-       <!-- === KHU VỰC NHÀ TÀI TRỢ & ĐỐI TÁC === -->
+       <!-- PARTNERS SECTION -->
         <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Sử dụng một Grid container duy nhất -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-8">
-            
-                    <!-- Cột 1: Nhà tài trợ -->
                     <div class="text-center">
-                        <h3 class="text-xl font-bold text-slate-800 tracking-wider mb-10">NHÀ TÀI TRỢ</h3>
+                        <h3 class="text-xl font-bold text-slate-800 tracking-wider mb-10">SPONSORS</h3>
                         <div class="flex flex-col items-center justify-center gap-10">
                             <a href="https://www.researchireland.ie/" target="_blank" rel="noopener noreferrer" class="transition-opacity hover:opacity-80">
-                                <img src="./img/logo_black-1.svg" alt="Research Ireland Logo" class="w-[330px] object-contain">
+                                <img src="../img/logo_black-1.svg" alt="Research Ireland Logo" class="w-[330px] object-contain">
                             </a>
                             <a href="https://www.ireland.ie/en/irish-aid/" target="_blank" rel="noopener noreferrer" class="transition-opacity hover:opacity-80">
-                                <img src="./img/IrishAid_Std_Colour_DFAT-1.png" alt="Irish Aid Logo" class="w-[400px] object-contain">
+                                <img src="../img/IrishAid_Std_Colour_DFAT-1.png" alt="Irish Aid Logo" class="w-[400px] object-contain">
                             </a>
                         </div>
                     </div>
-
-                    <!-- Cột 2: Đối tác nghiên cứu -->
                     <div class="text-center">
-                        <h3 class="text-xl font-bold text-slate-800 tracking-wider mb-2">ĐỐI TÁC NGHIÊN CỨU</h3>
+                        <h3 class="text-xl font-bold text-slate-800 tracking-wider mb-2">RESEARCH PARTNERS</h3>
                         <div class="flex justify-center items-center h-full">
                             <a href="https://www.ucd.ie/" target="_blank" rel="noopener noreferrer" class="transition-opacity hover:opacity-80">
-                                <img src="./img/University_College_Dublin_Logo.png" alt="UCD Dublin Logo" class="h-[250px] object-contain">
+                                <img src="../img/University_College_Dublin_Logo.png" alt="UCD Dublin Logo" class="h-[250px] object-contain">
                             </a>
                             <a href="https://www.ctu.edu.vn/" target="_blank" rel="noopener noreferrer" class="transition-opacity hover:opacity-80">
-                                <img src="./img/Can_Tho_University_Logo.png" alt="Can Tho University Logo" class="h-[300px] object-contain">
+                                <img src="../img/Can_Tho_University_Logo.png" alt="Can Tho University Logo" class="h-[300px] object-contain">
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -181,26 +167,26 @@
         <div class="max-w-7xl mx-auto pt-16 pb-4 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Cột 1: Thông tin dự án -->
+                <!-- Column 1: Project Information -->
                 <div class="space-y-4">
                     <a href="index.html" class="text-3xl font-bold text-white">AIRRVie</a>
-                    <p class="text-slate-400">Một dự án hợp tác nghiên cứu nhằm trao quyền cho nông dân Việt Nam thông qua Trí tuệ Nhân tạo, hướng tới nền nông nghiệp bền vững và thích ứng với biến đổi khí hậu.</p>
+                    <p class="text-slate-400">A collaborative research project aimed at empowering Vietnamese farmers through Artificial Intelligence, fostering sustainable agriculture and climate change adaptation.</p>
                 </div>
 
-                <!-- Cột 2: Liên kết nhanh -->
+                <!-- Column 2: Quick Links -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white tracking-wider">LIÊN KẾT NHANH</h3>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">QUICK LINKS</h3>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="solution.html" class="text-slate-400 hover:text-white transition">Giải pháp</a></li>
-                        <li><a href="technology.html" class="text-slate-400 hover:text-white transition">Công nghệ</a></li>
-                        <li><a href="team.html" class="text-slate-400 hover:text-white transition">Đội ngũ</a></li>
-                        <li><a href="news.html" class="text-slate-400 hover:text-white transition">Tin tức & Sự kiện</a></li>
+                        <li><a href="solution.html" class="text-slate-400 hover:text-white transition">Solution</a></li>
+                        <li><a href="technology.html" class="text-slate-400 hover:text-white transition">Technology</a></li>
+                        <li><a href="team.html" class="text-slate-400 hover:text-white transition">Team</a></li>
+                        <li><a href="news.html" class="text-slate-400 hover:text-white transition">News & Events</a></li>
                     </ul>
                 </div>
 
-                <!-- Cột 3: Thông tin liên hệ -->
+                <!-- Column 3: Contact Information -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white tracking-wider">THÔNG TIN LIÊN HỆ</h3>
+                    <h3 class="text-lg font-semibold text-white tracking-wider">CONTACT INFORMATION</h3>
                     <ul class="mt-4 space-y-4">
                         <li class="flex items-start">
                             <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
@@ -211,7 +197,7 @@
                             <span class="text-slate-400">vpdtri@ctu.edu.vn</span>
                         </li>
                         <li class="flex items-start">
-                             <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                             <span class="text-slate-400">(+84) 123 456 789</span>
                         </li>
                     </ul>
@@ -224,7 +210,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     
 </body>
 </html>
